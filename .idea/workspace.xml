@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43a274e6-a5b1-4530-b34e-b9e6729ad44c" name="Changes" comment="V2 de prueba técnica">
+    <list default="true" id="43a274e6-a5b1-4530-b34e-b9e6729ad44c" name="Changes" comment="V3 Añadido decorador">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/services/DashboardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/DashboardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/services/FollowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/FollowServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/services/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/ports/output/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/output/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/PostMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/UserEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/UserEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/repository/InMemoryUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/repository/InMemoryUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DashboardServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DashboardServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FollowServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FollowServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/DashboardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/FollowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/PostService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,26 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Downloads/Prueba-Tecnica-Digital-Solution-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.infrastructure.adapters.in" />
@@ -206,7 +199,8 @@
       <option name="presentableId" value="Default" />
       <updated>1721934703622</updated>
       <workItem from="1721934704622" duration="5991000" />
-      <workItem from="1722008493249" duration="12417000" />
+      <workItem from="1722008493249" duration="12515000" />
+      <workItem from="1722022340600" duration="254000" />
     </task>
     <task id="LOCAL-00001" summary="Firts Commit">
       <option name="closed" value="true" />
@@ -256,7 +250,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722021153435</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="V3 de prueba técnica finalizada">
+      <option name="closed" value="true" />
+      <created>1722021838958</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722021838958</updated>
+    </task>
+    <task id="LOCAL-00008" summary="V3 Añadido decorador">
+      <option name="closed" value="true" />
+      <created>1722021879408</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722021879408</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +278,9 @@
     <MESSAGE value="User Domain Created" />
     <MESSAGE value="V1 de prueba técnica" />
     <MESSAGE value="V2 de prueba técnica" />
-    <option name="LAST_COMMIT_MESSAGE" value="V2 de prueba técnica" />
+    <MESSAGE value="V3 de prueba técnica finalizada" />
+    <MESSAGE value="V3 Añadido decorador" />
+    <option name="LAST_COMMIT_MESSAGE" value="V3 Añadido decorador" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
