@@ -1,5 +1,6 @@
-package org.example.infrastructure.adapters.in;
+package org.example.infrastructure.adapters.in.controller;
 
+import org.example.infrastructure.adapters.configuration.GlobalExceptionHandler;
 import org.example.infrastructure.adapters.in.dto.PostDTO;
 import org.example.application.ports.input.PostService;
 import org.example.application.ports.input.FollowService;
@@ -13,10 +14,13 @@ public class SocialNetworkController {
     private final FollowService followService;
     private final DashboardService dashboardService;
 
-    public SocialNetworkController(PostService postService, FollowService followService, DashboardService dashboardService) {
+    private final GlobalExceptionHandler exceptionHandler;
+
+    public SocialNetworkController(PostService postService, FollowService followService, DashboardService dashboardService, GlobalExceptionHandler exceptionHandler) {
         this.postService = postService;
         this.followService = followService;
         this.dashboardService = dashboardService;
+        this.exceptionHandler = exceptionHandler;
     }
 
     public void run() {
@@ -28,19 +32,23 @@ public class SocialNetworkController {
             String[] parts = command.split(" ", 2);
             String action = parts[0];
 
-            switch (action) {
-                case "post":
-                    handlePost(parts[1]);
-                    break;
-                case "follow":
-                    handleFollow(parts[1]);
-                    break;
-                case "dashboard":
-                    handleDashboard(parts[1]);
-                    break;
-                default:
-                    System.out.println("Unknown command: " + action);
-                    break;
+            try {
+                switch (action) {
+                    case "post":
+                        handlePost(parts[1]);
+                        break;
+                    case "follow":
+                        handleFollow(parts[1]);
+                        break;
+                    case "dashboard":
+                        handleDashboard(parts[1]);
+                        break;
+                    default:
+                        System.out.println("Unknown command: " + action);
+                        break;
+                }
+            } catch (Exception e) {
+                exceptionHandler.handle(e);
             }
         } while (true);
     }

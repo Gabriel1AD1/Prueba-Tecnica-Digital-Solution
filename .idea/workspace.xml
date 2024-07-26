@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43a274e6-a5b1-4530-b34e-b9e6729ad44c" name="Changes" comment="V1 de prueba técnica">
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/DashboardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/FollowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/SocialNetworkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/ports/output/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/SocialNetworkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/dto/PostDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/annotation/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/annotation/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/annotation/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/entity/PostEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/PostMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/UserEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/repository/InMemoryUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SocialNetworkServiceTest.java" afterDir="false" />
+    <list default="true" id="43a274e6-a5b1-4530-b34e-b9e6729ad44c" name="Changes" comment="V2 de prueba técnica">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/DashboardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/FollowServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/PostServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/configuration/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/exception/SocialNetworkException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/exception/UserNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DashboardServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FollowServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PostServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/services/SocialNetworkService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/SocialNetworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/controller/SocialNetworkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/repository/InMemoryUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/repository/InMemoryUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SocialNetworkServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +208,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721934703622</updated>
       <workItem from="1721934704622" duration="5991000" />
-      <workItem from="1722008493249" duration="7967000" />
+      <workItem from="1722008493249" duration="11704000" />
     </task>
     <task id="LOCAL-00001" summary="Firts Commit">
       <option name="closed" value="true" />
@@ -247,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722016856337</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="V1 de prueba técnica">
+      <option name="closed" value="true" />
+      <created>1722017329073</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722017329073</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +261,8 @@
     <MESSAGE value="Post Domain Created" />
     <MESSAGE value="User Domain Created" />
     <MESSAGE value="V1 de prueba técnica" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1 de prueba técnica" />
+    <MESSAGE value="V2 de prueba técnica" />
+    <option name="LAST_COMMIT_MESSAGE" value="V2 de prueba técnica" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

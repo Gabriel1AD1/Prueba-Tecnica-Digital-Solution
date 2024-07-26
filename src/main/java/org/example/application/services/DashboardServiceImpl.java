@@ -1,10 +1,8 @@
 package org.example.application.services;
 
+import org.example.application.ports.input.DashboardService;
 import org.example.domain.models.Post;
 import org.example.domain.models.User;
-import org.example.application.ports.input.PostService;
-import org.example.application.ports.input.FollowService;
-import org.example.application.ports.input.DashboardService;
 import org.example.domain.ports.output.UserRepository;
 import org.example.infrastructure.adapters.in.dto.PostDTO;
 import org.example.infrastructure.adapters.out.mapper.PostMapper;
@@ -12,25 +10,11 @@ import org.example.infrastructure.adapters.out.mapper.PostMapper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SocialNetworkService implements PostService, FollowService, DashboardService {
+public class DashboardServiceImpl implements DashboardService {
     private final UserRepository userRepository;
 
-    public SocialNetworkService(UserRepository userRepository) {
+    public DashboardServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
-    }
-
-    @Override
-    public void post(String username, String message, String timestamp) {
-        User user = userRepository.findByUsername(username);
-        user.addPost(message, timestamp);
-        userRepository.save(user);
-    }
-
-    @Override
-    public void follow(String follower, String followee) {
-        User user = userRepository.findByUsername(follower);
-        user.follow(followee);
-        userRepository.save(user);
     }
 
     @Override
