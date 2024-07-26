@@ -1,6 +1,6 @@
 import org.example.application.services.PostServiceImpl;
 import org.example.domain.models.User;
-import org.example.domain.ports.output.UserRepository;
+import org.example.application.ports.output.UserRepository;
 import org.example.infrastructure.adapters.out.repository.InMemoryUserRepository;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ public class PostServiceTest {
 
     @Test
     public void testPost() {
-        UserRepository userRepository = new InMemoryUserRepository();
+        UserRepository userRepository = InMemoryUserRepository.getInstance();
         PostServiceImpl postService = new PostServiceImpl(userRepository);
         userRepository.save(new User("Alfonso"));
 

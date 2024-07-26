@@ -2,7 +2,7 @@ package org.example.application.services;
 
 import org.example.application.ports.input.PostService;
 import org.example.domain.models.User;
-import org.example.domain.ports.output.UserRepository;
+import org.example.application.ports.output.UserRepository;
 
 public class PostServiceImpl implements PostService {
     private final UserRepository userRepository;

@@ -9,12 +9,12 @@ import org.example.application.services.PostServiceImpl;
 import org.example.infrastructure.adapters.configuration.GlobalExceptionHandler;
 import org.example.infrastructure.adapters.in.controller.SocialNetworkController;
 import org.example.domain.models.User;
-import org.example.domain.ports.output.UserRepository;
+import org.example.application.ports.output.UserRepository;
 import org.example.infrastructure.adapters.out.repository.InMemoryUserRepository;
 
 public class Main {
     public static void main(String[] args) {
-        UserRepository userRepository = new InMemoryUserRepository();
+        UserRepository userRepository = InMemoryUserRepository.getInstance();
         PostService postService = new PostServiceImpl(userRepository);
         FollowService followService = new FollowServiceImpl(userRepository);
         DashboardService dashboardService = new DashboardServiceImpl(userRepository);

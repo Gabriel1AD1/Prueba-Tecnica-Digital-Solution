@@ -2,7 +2,7 @@ package org.example.application.services;
 
 import org.example.application.ports.input.FollowService;
 import org.example.domain.models.User;
-import org.example.domain.ports.output.UserRepository;
+import org.example.application.ports.output.UserRepository;
 
 public class FollowServiceImpl implements FollowService {
     private final UserRepository userRepository;

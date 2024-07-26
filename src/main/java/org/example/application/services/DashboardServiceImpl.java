@@ -3,7 +3,7 @@ package org.example.application.services;
 import org.example.application.ports.input.DashboardService;
 import org.example.domain.models.Post;
 import org.example.domain.models.User;
-import org.example.domain.ports.output.UserRepository;
+import org.example.application.ports.output.UserRepository;
 import org.example.infrastructure.adapters.in.dto.PostDTO;
 import org.example.infrastructure.adapters.out.mapper.PostMapper;
 

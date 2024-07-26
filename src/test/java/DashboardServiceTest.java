@@ -1,7 +1,7 @@
 import org.example.application.services.DashboardServiceImpl;
 import org.example.application.services.FollowServiceImpl;
 import org.example.domain.models.User;
-import org.example.domain.ports.output.UserRepository;
+import org.example.application.ports.output.UserRepository;
 import org.example.infrastructure.adapters.in.dto.PostDTO;
 import org.example.infrastructure.adapters.out.repository.InMemoryUserRepository;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ public class DashboardServiceTest {
 
     @Test
     public void testGetDashboard() {
-        UserRepository userRepository = new InMemoryUserRepository();
+        UserRepository userRepository = InMemoryUserRepository.getInstance();
         DashboardServiceImpl dashboardService = new DashboardServiceImpl(userRepository);
         userRepository.save(new User("Alicia"));
         User ivan = new User("Ivan");

@@ -1,4 +1,4 @@
-package org.example.domain.ports.output;
+package org.example.application.ports.output;
 
 import org.example.domain.models.User;
 

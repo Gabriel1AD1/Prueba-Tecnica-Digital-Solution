@@ -1,6 +1,6 @@
 import org.example.application.services.FollowServiceImpl;
 import org.example.domain.models.User;
-import org.example.domain.ports.output.UserRepository;
+import org.example.application.ports.output.UserRepository;
 import org.example.infrastructure.adapters.out.repository.InMemoryUserRepository;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ public class FollowServiceTest {
 
     @Test
     public void testFollow() {
-        UserRepository userRepository = new InMemoryUserRepository();
+        UserRepository userRepository = InMemoryUserRepository.getInstance();
         FollowServiceImpl followService = new FollowServiceImpl(userRepository);
         userRepository.save(new User("Alicia"));
         userRepository.save(new User("Ivan"));
