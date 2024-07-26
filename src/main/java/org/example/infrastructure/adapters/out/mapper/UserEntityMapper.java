@@ -2,12 +2,14 @@ package org.example.infrastructure.adapters.out.mapper;
 
 import org.example.domain.models.Post;
 import org.example.domain.models.User;
+import org.example.infrastructure.adapters.out.annotation.Mapper;
 import org.example.infrastructure.adapters.out.entity.PostEntity;
 import org.example.infrastructure.adapters.out.entity.UserEntity;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Mapper
 public class UserEntityMapper {
 
     public static User toEntity(UserEntity entity) {
