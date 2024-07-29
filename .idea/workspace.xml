@@ -5,35 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43a274e6-a5b1-4530-b34e-b9e6729ad44c" name="Changes" comment="Mejora de usuarios , y mejor interfaz y mejor manera de manejar datos inexistentes , ademas mejores datos de prueba">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/console/controller/SocialNetworkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AuthServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DashboardServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FollowServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PostServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/input/DashboardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/ports/output/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/ports/output/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/application/services/DashboardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/application/services/DashboardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/configuration/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/configuration/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/exception/SocialNetworkException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/exception/SocialNetworkException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/exception/UserNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/exception/UserNotFound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/controller/SocialNetworkController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/dto/PostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/models/dto/PostDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/in/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/models/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/PostMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/UserEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/mapper/UserEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/repository/InMemoryUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/adapters/out/repository/InMemoryUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DashboardServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FollowServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PostServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +38,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -105,7 +80,7 @@
       <recent name="org.example.infrastructure.adapters.in" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FollowServiceImplTest.follow_followeeDoesNotExist_throwsException">
+  <component name="RunManager">
     <configuration name="DashboardServiceImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -228,9 +203,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FollowServiceImplTest" />
         <item itemvalue="Gradle.FollowServiceImplTest.follow_followeeDoesNotExist_throwsException" />
         <item itemvalue="Gradle.PostServiceImplTest" />
-        <item itemvalue="Gradle.FollowServiceImplTest" />
         <item itemvalue="Gradle.DashboardServiceImplTest" />
         <item itemvalue="Gradle.SocialNetworkControllerTest" />
       </list>
@@ -247,7 +222,7 @@
       <workItem from="1721934704622" duration="5991000" />
       <workItem from="1722008493249" duration="12515000" />
       <workItem from="1722022340600" duration="1977000" />
-      <workItem from="1722124872780" duration="22326000" />
+      <workItem from="1722124872780" duration="22606000" />
     </task>
     <task id="LOCAL-00001" summary="Firts Commit">
       <option name="closed" value="true" />
@@ -321,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722022701327</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Mejora de usuarios , y mejor interfaz y mejor manera de manejar datos inexistentes , ademas mejores datos de prueba">
+      <option name="closed" value="true" />
+      <created>1722230909615</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722230909615</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
