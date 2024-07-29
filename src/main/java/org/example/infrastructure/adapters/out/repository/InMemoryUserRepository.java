@@ -2,7 +2,7 @@ package org.example.infrastructure.adapters.out.repository;
 
 import org.example.domain.models.User;
 import org.example.application.ports.output.UserRepository;
-import org.example.infrastructure.adapters.exception.UserNotFound;
+import org.example.infrastructure.exception.UserNotFound;
 import org.example.infrastructure.adapters.out.entity.UserEntity;
 import org.example.infrastructure.adapters.out.mapper.UserEntityMapper;
 
@@ -33,9 +33,15 @@ public class InMemoryUserRepository implements UserRepository {
     }
 
     @Override
-    public void save(User user) {
+    public User save(User user) {
         UserEntity userEntity = UserEntityMapper.toDomain(user);
         users.put(user.getUsername(), userEntity);
+        return UserEntityMapper.toEntity(userEntity);
+    }
+
+    @Override
+    public boolean existByUsername(String username) {
+        return users.get(username) != null;
     }
 }
 

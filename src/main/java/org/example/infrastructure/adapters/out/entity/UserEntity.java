@@ -8,16 +8,29 @@ import java.util.List;
 @Entity
 public class UserEntity {
     private String username;
+
+    private String password;
     private List<PostEntity> posts = new ArrayList<>();
     private List<String> following = new ArrayList<>();
 
     public UserEntity() {
+        this.posts = new ArrayList<>();
+        this.following = new ArrayList<>();
     }
 
-    public UserEntity(String username, List<PostEntity> posts, List<String> following) {
+    public UserEntity(String username, String password ,List<PostEntity> posts, List<String> following) {
+        this.password = password;
         this.username = username;
         this.posts = posts != null ? posts : new ArrayList<>();
         this.following = following != null ? following : new ArrayList<>();
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getUsername() {

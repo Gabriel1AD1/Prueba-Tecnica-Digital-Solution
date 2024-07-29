@@ -1,4 +1,4 @@
-package org.example.infrastructure.adapters.in.dto;
+package org.example.domain.models.dto;
 
 public class PostDTO {
     private String message;

@@ -1,6 +1,6 @@
-package org.example.infrastructure.adapters.configuration;
+package org.example.infrastructure.configuration;
 
-import org.example.infrastructure.adapters.exception.SocialNetworkException;
+import org.example.infrastructure.exception.SocialNetworkException;
 
 public class GlobalExceptionHandler {
 

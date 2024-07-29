@@ -1,6 +1,6 @@
 package org.example.application.ports.input;
 
-import org.example.infrastructure.adapters.in.dto.PostDTO;
+import org.example.domain.models.dto.PostDTO;
 import java.util.List;
 
 /**

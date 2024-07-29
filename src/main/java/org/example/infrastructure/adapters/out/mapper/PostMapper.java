@@ -1,7 +1,7 @@
 package org.example.infrastructure.adapters.out.mapper;
 
 import org.example.domain.models.Post;
-import org.example.infrastructure.adapters.in.dto.PostDTO;
+import org.example.domain.models.dto.PostDTO;
 import org.example.infrastructure.adapters.out.annotation.Mapper;
 
 import java.util.List;

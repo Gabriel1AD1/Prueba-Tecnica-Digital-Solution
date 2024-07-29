@@ -1,4 +1,4 @@
-package org.example.infrastructure.adapters.in.dto;
+package org.example.domain.models.dto;
 
 import java.util.List;
 

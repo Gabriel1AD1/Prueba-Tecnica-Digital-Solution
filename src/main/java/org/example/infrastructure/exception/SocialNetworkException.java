@@ -1,4 +1,4 @@
-package org.example.infrastructure.adapters.exception;
+package org.example.infrastructure.exception;
 
 public class SocialNetworkException extends RuntimeException {
     public SocialNetworkException(String message) {

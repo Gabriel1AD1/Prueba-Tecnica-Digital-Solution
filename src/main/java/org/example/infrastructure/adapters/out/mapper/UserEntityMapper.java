@@ -13,9 +13,9 @@ import java.util.List;
 public class UserEntityMapper {
 
     public static User toEntity(UserEntity entity) {
-        User user = new User(entity.getUsername());
+        User user = new User(entity.getUsername(),entity.getPassword());
         user.setFollowing(entity.getFollowing() != null ? entity.getFollowing() : new ArrayList<>());
-
+        user.setPassword(entity.getPassword());
         List<Post> postDomainList = new ArrayList<>();
         if (entity.getPosts() != null) {
             for (PostEntity post : entity.getPosts()) {
@@ -31,7 +31,7 @@ public class UserEntityMapper {
         UserEntity userEntity = new UserEntity();
         userEntity.setUsername(user.getUsername());
         userEntity.setFollowing(user.getFollowing() != null ? user.getFollowing() : new ArrayList<>());
-
+        userEntity.setPassword(user.getPassword());
         List<PostEntity> postEntityList = new ArrayList<>();
         if (user.getPosts() != null) {
             for (Post post : user.getPosts()) {
